@@ -13,7 +13,7 @@ int main(){
 Teacher t1[5];
 for (int i=0;i<5;i++){
     cout<<"Enter the Details of the teacher "<<i+1<<endl;
-    cout<<"Name: ";
+    cout<<"Name: ";'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
     cin>>t1[i].name;
     cout<<endl;
       cout<<"Department: ";

@@ -1,3 +1,4 @@
+// Questoin 3: Implement a friend function to overload the input operator (>>) for the Student class, allowing you to input student information directly into an object of the Student class. The function should prompt the user to enter the name, roll number, and GPA of the student.
 
 
 // Answer:

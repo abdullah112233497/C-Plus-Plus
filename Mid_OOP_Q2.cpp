@@ -1,3 +1,7 @@
+// Mid OOP Q2: Create a class named "Student" with the following attributes: name, roll number, and GPA. Implement three constructors for the class: one that initializes all attributes, one that initializes only the name and roll number (setting GPA to 0.0), and one that initializes only the name (setting roll number to 0 and GPA to 0.0). Include a member function to display the student's information. In the main function, create three Student objects using each of the constructors and display their information.
+
+
+// Answer:
 #include<iostream>
 #include<string>
 using namespace std;

@@ -31,7 +31,7 @@ Student(){
     GPA=0.0;
 }
 
-
+// Question 2 statement required a member function to display the student's information, so here is the implementation of that function:
 void Display(){
     cout<<"Name: "<<name<<endl;
     cout<<"Roll No: "<<rollno<<endl;

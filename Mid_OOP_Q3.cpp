@@ -63,10 +63,10 @@ Student obj4;
 
 cin>>obj4; // Using the Friend Overloading function to take input for obj4  
 cout<<"Student 1: "<<endl;
-// obj1.Display();
+obj1.Display();
 cout<<endl<<"Student 2: "<<endl;    
-// obj2.Display();
+obj2.Display();
 cout<<endl<<"Student 3: "<<endl;
-// obj3.Display();
+obj3.Display();
     return 0;
 }

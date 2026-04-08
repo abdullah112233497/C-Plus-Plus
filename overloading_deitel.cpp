@@ -1,14 +1,22 @@
 #include<iostream>
+#include<cstring>
 using namespace std;
 class A{
 private:
-public:
+char c[100];
 int a;
+public:
 A(){
     a=0;
+    c[100]='\0';
 }
-A(int x){
+A(int x ){
 a=x;
+
+}
+A(int x,const char* p ){
+a=x;
+strcpy(c,p);
 }
 // Display function
 
@@ -32,10 +40,22 @@ A operator +=(A j){
  return *this; //This means return the whole current object
 
 }
+
+// Overlaoding fo the Comparision operator (==):
+bool operator ==(A o) const{
+    if (strlen(this->c)==strlen(o.c)){
+        return true;
+    
+    }
+    else{
+        return false;
+    }
+}
 };
 
+
 int main(){
-A y(3),z(6),v;
+A y(3,"sa"),z(6,"Ali"),v;
 if (y<z){
     cout << "true" << endl;
 }
@@ -43,10 +63,16 @@ else{
     cout << "false" << endl;
 }
 v=y+z;
-cout<<v;
+cout<<v<<endl;
 
 cout<<"The Overloading for the += operator: "<<endl;
 v+=y;
-cout<<v;
+cout<<v<<endl  ;
+if (y==z){
+    cout<<"true"<<endl;
+}
+else{
+    cout<<"false"<<endl;
+}
     return 0;
 }

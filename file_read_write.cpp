@@ -27,12 +27,12 @@ void ou(){
 }
 };
 int main(int nu,char* []){
-student s;
+student s[10];
 ofstream file;
 file.open("file.dat "  ,ios:: out | ios::binary);
 for(int i=0;i<10;i++){
-s.in();
-file.write((char*)&s,sizeof(s));
+s[i].in();
+file.write((char*)&s[i],sizeof(s[i]));
 }
 // file.open("file.dat ", ios:: out | ios::binary);
 file.close();
@@ -43,8 +43,8 @@ file1.open("file.dat ", ios:: in | ios::binary );
 for(int i=0;i<10;i++){
     file1.seekg(i*sizeof(s), ios::beg);
 
-file1.read((char*)&s,sizeof(s));
-s.ou();
+file1.read((char*)&s[i],sizeof(s[i]));
+s[i].ou();
 }
 file1.close();
 return 0;

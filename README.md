@@ -6,3 +6,4 @@ and also the Accessing the constructor and the memeber function in the Chlid cla
 Template library 
 Expection handling 
 vector 
+practical practice of 2nd semester 
